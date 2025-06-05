@@ -16,16 +16,16 @@
       <mat-card-subtitle>
         <h4>Details</h4>
         <div>
-          Provider: {{bio().Provider}}
+          {{ 'provider' | translate }} : {{bio().Provider}}
         </div>
         <div>
-          Created on: {{bio().DateCreated}}
+          {{ 'lastModified' | translate }}: {{bio().DateCreated}}
         </div>
         <div>
-          Published on: {{bio().PublicationDate}}
+          {{ 'publicationDate' | translate }}: {{bio().PublicationDate}}
         </div>
         <div>
-          Last modified: {{bio().LastModified}}
+          {{ 'dateCreated' | translate }}: {{bio().LastModified}}
         </div>
       </mat-card-subtitle>
     </mat-card-footer>
