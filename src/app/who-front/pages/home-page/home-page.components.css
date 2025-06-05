@@ -1,0 +1,8 @@
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;   /* permite que bajen si no hay espacio horizontal */
+  gap: 16px;         /* espacio entre tarjetas */
+  padding: 16px;
+  justify-content: flex-start;
+}

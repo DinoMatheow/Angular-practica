@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <button matIconButton class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>{{ 'title' | translate }}</span>
+  <span class="example-spacer"></span>
+
+  <mat-button-toggle-group
+  [value]="translate.currentLang || 'en'"
+  (change)="changeLang($event.value)"
+  >
+    <mat-button-toggle value="en">EN</mat-button-toggle>
+    <mat-button-toggle value="es">ES</mat-button-toggle>
+  </mat-button-toggle-group>
+
+</mat-toolbar>
+
+

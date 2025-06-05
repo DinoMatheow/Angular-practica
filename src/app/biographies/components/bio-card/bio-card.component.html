@@ -1,0 +1,34 @@
+<div class="card-row">
+
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>{{bio().Title}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <h3>Biography</h3>
+      <p>{{bio().Biography}}</p>
+    </mat-card-content>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-footer>
+      <mat-card-subtitle>
+        <h4>Details</h4>
+        <div>
+          Provider: {{bio().Provider}}
+        </div>
+        <div>
+          Created on: {{bio().DateCreated}}
+        </div>
+        <div>
+          Published on: {{bio().PublicationDate}}
+        </div>
+        <div>
+          Last modified: {{bio().LastModified}}
+        </div>
+      </mat-card-subtitle>
+    </mat-card-footer>
+  </mat-card>
+
+</div>

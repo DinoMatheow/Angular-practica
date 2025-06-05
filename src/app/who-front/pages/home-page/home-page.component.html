@@ -1,0 +1,9 @@
+<h1>All biographies information</h1>
+
+<div class="card-row">
+  @if (biographiesResource.value(); as biographies) {
+    @for (bio of biographies; track bio.Id) {
+      <app-bio-card [bio]="bio"></app-bio-card>
+    }
+  }
+</div>
